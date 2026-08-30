@@ -113,20 +113,20 @@ export const skillCategories: SkillCategory[] = [
       'DBMS',
     ],
   },
-
-  {
-    title: 'UI/UX & Design',
-    icon: 'PenTool',
-    skills: [
-      'Figma',
-      'UI/UX Design',
-      'Wireframing',
-      'Prototyping',
-      'Responsive Web Design',
-      'Canva',
-    ],
-  },
-
+{
+  title: 'UI/UX & Design TEST',
+  icon: 'PenTool',
+  skills: [
+    'Figma',
+    'Adobe Photoshop',
+    'Adobe Illustrator',
+    'UI/UX Design',
+    'Wireframing',
+    'Prototyping',
+    'Responsive Web Design',
+    'Canva',
+  ],
+},
   {
     title: 'Development Tools',
     icon: 'Terminal',

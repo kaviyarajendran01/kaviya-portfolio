@@ -44,7 +44,6 @@ details:
 'Built a responsive frontend with a Node.js backend to implement the core reservation workflow.',
 tags: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
 image: '/images/denis-chick-mHqIs22M2Kw-unsplash.jpg',
-link: '#',
 linkType: 'Live Demo',
 },
 {
@@ -63,10 +62,33 @@ tags: [
 'Docker',
 ],
 image: '/images/2h-media-YbtlsuQEp1I-unsplash.jpg',
-link: '#',
+link: 'https://github.com/kaviyarajendran01/SmartTaskTracker.git',
 linkType: 'Full-Stack Project',
 },
-
+{
+  title: "Real Juice — Concept Ad Campaign",
+  category: "Concept Design",
+  image: "/images/Task_01.png",
+  description:
+    "A self-initiated concept ad poster for a fruit juice brand, focused on communicating freshness and energy through bold typography and vibrant visual composition.",
+  bullets: [
+    "Researched reference ad campaigns for tone and visual direction",
+    "Designed a poster-style creative built around a strong central visual and headline",
+    "Refined layout, typography, and color balance for a clean, market-ready look",
+  ],
+  tags: ["Visual Design", "Typography", "Photo Editing"],
+},{
+  type: 'Branding / Mockup Design',
+  title: 'Dashing Whippets — Brand Mockup System',
+  description:
+    'A branding mockup system built around the Dashing Whippets running club identity, extended across apparel, accessories, and lifestyle scenes.',
+  details:
+    'Designed a cohesive mockup presentation — t-shirts, hoodies, caps, bottles, race bibs, tote bags, banners, and street lifestyle scenes — using the brand\u2019s black, white, and red palette to keep every piece consistent.',
+  tags: ['Visual Design', 'Brand Identity', 'Mockup Design'],
+ image: '/images/dashing_whippets_tshirt_logo.jpg',
+link: '/images/ChatGPT.png',
+  linkType: 'View Full Mockup',
+},
 ];
 
 export default function Projects() {
