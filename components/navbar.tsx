@@ -44,7 +44,7 @@ export function Navbar() {
         {/* Desktop nav */}
         <ul className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
-            <li key={link.href}>
+            <li key={link.label}>
               <a
                 href={link.href}
                 className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -80,12 +80,12 @@ export function Navbar() {
         id="mobile-menu"
         className={cn(
           'overflow-hidden border-t border-border/60 bg-background/95 backdrop-blur-xl transition-[max-height,opacity] duration-300 md:hidden',
-          open ? 'max-h-[480px] opacity-100' : 'max-h-0 opacity-0'
+          open ? 'max-h-[560px] opacity-100' : 'max-h-0 opacity-0'
         )}
       >
         <ul className="flex flex-col px-5 py-3">
           {navLinks.map((link) => (
-            <li key={link.href}>
+            <li key={link.label}>
               <a
                 href={link.href}
                 onClick={() => setOpen(false)}

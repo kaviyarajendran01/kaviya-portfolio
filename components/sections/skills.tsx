@@ -7,6 +7,7 @@ Database,
 Palette,
 Wrench,
 Brain,
+Sparkles,
 } from 'lucide-react';
 
 import { SectionHeading } from '@/components/section-heading';
@@ -62,6 +63,11 @@ skills: [
 'Adaptability',
 'Time Management',
 ],
+},
+{
+icon: Sparkles,
+title: 'Prompt Engineering',
+skills: ['Role', 'Goal', 'Context', 'Instructions', 'Output Format'],
 },
 ];
 
