@@ -6,12 +6,25 @@ Code2,
 Palette,
 Presentation,
 CalendarDays,
+BadgeCheck,
+ExternalLink,
 } from 'lucide-react';
 
 import { SectionHeading } from '@/components/section-heading';
 import { Reveal } from '@/components/reveal-on-scroll';
 
-const items = [
+type Item = {
+icon: typeof Award;
+type: string;
+title: string;
+organization: string;
+period: string;
+result: string;
+description: string;
+href?: string;
+};
+
+const items: Item[] = [
 {
 icon: Code2,
 type: 'Certification',
@@ -51,6 +64,17 @@ period: 'March 2024',
 result: 'National-Level Event',
 description:
 'Participated in a national-level technical event and engaged in technology-focused activities.',
+},
+{
+icon: BadgeCheck,
+type: 'Certification',
+title: 'Prompt Engineering Bootcamp',
+organization: 'LetsUpgrade',
+period: 'October 2026',
+result: 'Prompt Engineering',
+description:
+'Completed a bootcamp on crafting effective prompts for AI models and applying prompt engineering techniques.',
+href: '/certificates/prompt-engineering-bootcamp-letsupgrade.pdf',
 },
 ];
 
@@ -123,6 +147,18 @@ return ( <section
                 <div className="mt-5 inline-flex rounded-full border border-border bg-secondary/50 px-3 py-1.5 text-xs font-medium text-foreground">
                   {item.result}
                 </div>
+
+                {item.href && (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-3 mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-accent transition-colors hover:text-foreground"
+                  >
+                    View Certificate
+                    <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+                  </a>
+                )}
 
               </div>
             </div>

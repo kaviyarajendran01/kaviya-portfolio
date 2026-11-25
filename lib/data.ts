@@ -58,6 +58,10 @@ export const navLinks = [
     href: '#achievements',
   },
   {
+    label: 'Certifications',
+    href: '#achievements',
+  },
+  {
     label: 'Contact',
     href: '#contact',
   },
